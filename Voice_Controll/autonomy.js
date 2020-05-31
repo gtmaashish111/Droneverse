@@ -26,7 +26,7 @@ router.post('/command',(req,res) => {
     if(commands.indexOf(command) !== -1) {
         switch(command.toUpperCase()) {
             case "TAKEOFF": 
-                console.log('taking off the drone');
+                console.log('taking off');
                 client.takeoff();
                 controller.zero();
             break;
