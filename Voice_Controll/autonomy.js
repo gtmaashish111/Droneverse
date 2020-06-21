@@ -45,7 +45,7 @@ router.post('/command',(req,res) => {
             break;
             case "DOWN":
                 console.log('taking the drone down 1 meter');
-                controller.down(0.5,(err,data) => {
+                controller.down(1,(err,data) => {
                     if(err) {
                         client.stop();
                         client.land();
@@ -54,7 +54,7 @@ router.post('/command',(req,res) => {
             break;
             case "GOLEFT":
                 console.log('taking the drone left half meter');
-                controller.left(0.5,(err,data) => {
+                controller.left(2,(err,data) => {
                     if(err) {
                         client.stop();
                         client.land();
@@ -63,7 +63,7 @@ router.post('/command',(req,res) => {
             break;
             case "GORIGHT":
                 console.log('taking the drone right half meter');
-                controller.right(0.5,(err,data) => {
+                controller.right(2,(err,data) => {
                     if(err) {
                         client.stop();
                         client.land();
@@ -81,7 +81,7 @@ router.post('/command',(req,res) => {
             break;            
             case "GOFORWARD":
                 console.log('moving the drone formward by 1 meter');
-                controller.forward(1,(err,data) => {
+                controller.forward(2,(err,data) => {
                     if(err) {
                         client.stop();
                         client.land();
@@ -90,7 +90,7 @@ router.post('/command',(req,res) => {
             break;
             case "GOBACKWARD":
                 console.log('moving the drone backward by 1 meter');
-                controller.backward(1,(err,data) => {
+                controller.backward(2,(err,data) => {
                     if(err) {
                         client.stop();
                         client.land();
