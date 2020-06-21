@@ -119,7 +119,7 @@ while(Run):
     for i in np.arange(1, len(points)):
         if points[i - 1] is None or points[i] is None:
             continue
-        #check if 400,400 is in surface of circle ((x,y),raduis) if case then no need to do calculations
+       
 
         if counter >= 10 and i == 1:
             
